@@ -10,10 +10,10 @@ import { InfopageService } from '../../providers/infopage.service';
 })
 export class HeaderComponent implements OnInit {
 
-Info = {};
 
-  constructor(private _service: InfopageService, private _route: Router) {
-    this.Info = this._service;
+
+  constructor(public _service: InfopageService, private _route: Router) {
+
   }
 
   ngOnInit() {
